@@ -85,6 +85,7 @@ cv2.imshow('WINDOW', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/user-attachments/assets/2152e16c-1977-4319-b1fd-1aaf2411c24f)
 
 2. Draw a circle at the center of the image.
 ```
@@ -98,6 +99,7 @@ cv2.imshow('WINDOW', res)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/user-attachments/assets/24bdb4ef-9758-493d-ba77-4366d474d390)
 
 3.Draw a rectangle around a specific region of interest in the image.
 ```
@@ -113,6 +115,7 @@ cv2.imshow('WINDOW', res_img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+![image](https://github.com/user-attachments/assets/6db511b7-70a1-45f2-9995-67d544b31d8c)
 
 
 4.Add the text "OpenCV Drawing" at the top-left corner of the image.
