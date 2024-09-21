@@ -67,7 +67,6 @@ i.Load an image from your local directory and display it.
 ```
 import cv2
 image=cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image, (400, 300))
 cv2.imshow('NATUREK',image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
@@ -79,7 +78,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("BIKE.jpg")
-image = cv2.resize(image, (400, 300))
 res = cv2.line(image, (0, 0), (image.shape[1], image.shape[0]), (255,0,0), 10)
 cv2.imshow('WINDOW', res)
 cv2.waitKey(0)
@@ -91,7 +89,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("BIKE.jpg")
-image = cv2.resize(image, (400, 300))
 height, width, _ = image.shape
 center_coordinates = (width // 2, height // 2)
 res = cv2.circle(image, center_coordinates, 120, (0, 255, 0), 10)
@@ -105,7 +102,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("BIKE.jpg")
-image = cv2.resize(image, (400, 300))
 start = (150, 100)
 stop = (300, 200)
 color = (255, 255, 100)
@@ -122,7 +118,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("BIKE.jpg")
-image = cv2.resize(image, (400, 300))
 text = "OpenCV Drawing"
 position = (10, 50)
 font = cv2.FONT_HERSHEY_SIMPLEX
@@ -141,7 +136,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image,(300,200))
 cv2.imshow('ORIGINAL IMAGE',image)
 hsv = cv2.cvtColor(image,cv2.COLOR_RGB2HSV)
 cv2.imshow('RGB2HSV',hsv)
@@ -155,7 +149,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image,(300,200))
 cv2.imshow('ORIGINAL IMAGE',image)
 gray = cv2.cvtColor(image,cv2.COLOR_RGB2GRAY)
 cv2.imshow('RGB2GRAY',gray)
@@ -168,7 +161,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image,(300,200))
 cv2.imshow('ORIGINAL IMAGE',image)
 YCrCb = cv2.cvtColor(image, cv2.COLOR_BGR2YCrCb)
 cv2.imshow('RGB-2-YCrCb',YCrCb)
@@ -183,7 +175,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image,(300,200))
 cv2.imshow('ORIGINAL IMAGE',image)
 RGB = cv2.cvtColor(image,cv2.COLOR_HSV2BGR)
 cv2.imshow('HSV2RGB',RGB)
@@ -204,7 +195,6 @@ print(f"Pixel value at (100, 100): {pixel_value}")
 ```
 import cv2
 image = cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image,(400,300))
 cv2.imshow('ORIGINAL IMAGE',image)
 image[200, 200] = [255, 255, 255] 
 cv2.imshow('MODIFIED IMAGE', image)
@@ -229,7 +219,6 @@ Crop a region of interest (ROI) from the image (e.g., a 100x100 pixel area start
 ```
 import cv2
 image = cv2.imread('BIKE.jpg',1)
-image = cv2.resize(image,(400,300))
 x, y = 50, 50
 width, height = 100, 100
 roi = image[y:y + height, x:x + width]
@@ -244,7 +233,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("BIKE.jpg")
-image = cv2.resize(image,(300,200))
 res=cv2.rotate(image,cv2.ROTATE_180)
 cv2.imshow('ORIGINAL IMAGE',image)
 cv2.imshow('FLIPPED IMAGE', res)
@@ -257,7 +245,6 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("BIKE.jpg")
-image = cv2.resize(image,(300,200))
 res=cv2.rotate(image,cv2.ROTATE_90_CLOCKWISE)
 cv2.imshow('ORIGINAL IMAGE',image)
 cv2.imshow('FLIPPED IMAGE', res)
@@ -271,7 +258,6 @@ Save the final modified image to your local directory.
 ```
 import cv2
 img = cv2.imread("BIKE.jpg")
-img = cv2.resize(img,(300,200))
 cv2.imwrite('nature_pic.jpg',img)
 ```
 ![Screenshot 2024-09-09 090632](https://github.com/user-attachments/assets/874121bf-a1c9-4fb9-be27-e4613309ad2d)
